@@ -1,0 +1,17 @@
+server:
+  port: 18080
+spring:
+  application:
+    name: com.looko.blocks.demo
+  cloud:
+    nacos:
+      server-addr: nas.me:8848
+      username: nacos
+      password: nacos
+      discovery:
+        group: blocks
+        namespace: 7f242123-d99c-4a33-87a2-78754bcd4dc2 # dev 的 uuid, 此处要填 uuid
+      config:
+        group: blocks
+        namespace: 7f242123-d99c-4a33-87a2-78754bcd4dc2 # 同上
+        file-extension: yml
